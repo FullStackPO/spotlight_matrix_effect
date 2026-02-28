@@ -24,6 +24,9 @@ section{
     width: 100%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: top;
+    justify-content: center;
 }
 
 section img{
@@ -42,4 +45,18 @@ section img{
         transparent,
         rgba(0,0,0,0.97)
     );
+}
+
+.matrix{
+    position: absolute;
+    margin-top: 20px;
+}
+.matrix h1{
+    height: 80px;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.867);
+    color : rgb(2, 211, 2);
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
 }
