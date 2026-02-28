@@ -7,6 +7,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    cursor: none;
 }
 
 :root{
@@ -41,7 +42,7 @@ section img{
     pointer-events: none;
 
     background: radial-gradient(
-        150px at var(--x) var(--y),
+        250px at var(--x) var(--y),
         transparent,
         rgba(0,0,0,0.97)
     );
