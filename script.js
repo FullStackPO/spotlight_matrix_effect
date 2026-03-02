@@ -11,7 +11,7 @@ let iteration = 0
 
 matrix.addEventListener("mouseenter", function(){
 
-    setInterval(() => {
+    let interval = setInterval(() => {
     const str = text.split('').map((char,index) => {
     if(index < iteration){
         return char
@@ -20,6 +20,10 @@ matrix.addEventListener("mouseenter", function(){
     }).join('')
     h1.innerText = str
 
-    iteration += 0.15
-    },50)
+    iteration += 0.25
+    },35)
+
+    setTimeout(()=>{
+        clearInterval(interval);
+    },2000)
 })
